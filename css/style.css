@@ -1,22 +1,27 @@
 body {
-  background-color: #f7c195;
+  background-color: #c2fd7b;
+
   height: 50px;
   color: #000000;
   font-family: 'Oswald', sans-serif;
-  padding: 5px;
+  /* padding: 5px; */
   margin: auto;
   text-align: center;
+  border: 10px;
 }
-div {
+div td {
   text-align: center;
 }
-td {
-  background-color: #a39c9c;
-  width: 30px;
-  height: 30px;
-  padding: 10px;
-  text-align: center;
+
+td.cell {
+  background-color: #de6b8a;
+  width: 50px;
+  height: 50px;
   font-size: 1.5em;
+}
+
+table {
+  margin: auto;
 }
 
 /* .formLine {
@@ -26,9 +31,7 @@ td {
   } */
 
 button {
-  display: block;
   text-align: center;
-  font-style: italic;
   cursor: pointer;
 }
 
@@ -52,14 +55,27 @@ td.cell:hover {
   color: #df6909;
 }
 .h1 {
-  width: 30px;
-  height: 30px;
   text-align: center;
   font-style: italic;
 }
 
-.board-container {
+.modal {
+  display: none;
+  background-color: #d64161;
+  height: 150px;
+  width: 200px;
+  /* margin: auto; */
+  padding: 20px 0px;
+  position: absolute;
+  left: 500px;
+  bottom: 50%;
+}
+.flag-box {
   text-align: center;
-  padding: 5px;
-  border-radius: 9px;
+}
+td.shown {
+  background-color: #de6b8a;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
 }

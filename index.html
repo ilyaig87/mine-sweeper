@@ -10,27 +10,41 @@
   </head>
   <h1>Mine Sweeper</h1>
 
-  <body onload="initGame()">
+  <body onload="init()">
     
+    
+    <div class = "top"></div>
+    <div class = "flag-box">score:0 <span
+      id = "flags-left">Flags:10</span><h1></div> 
 
-      <div class = "top"></div>
-      <div class = "flag-box">0<span
-        id = "flags-left"></span><h1></div> 
-          <div class = "timer-box"><h1></h1></div>
-          <div class ="grid"></div>
-          <div id ="result"></div>
+        <div class = "timer-box"><h1>0:00</h1></div>
+        <div class ="grid"></div>
+        <div id ="result"></div>        
           
-          <button class = "emoji-btn"><h1>😃</h1></button>
-      <button onclick="">Easy</button>
-      <button onclick="">Medium</button>
-      <button onclick="">Hard</button>
-   
+          <button onclick="init()">😃</button>
+
+          <div class="level">
+            <div class="subtext">
+              Mines left 2
+                        </div>
+
+            <h5> Choose Your Level</h5>
+          <button onclick="setLevel(4)">Easy</button>
+          <button onclick="setLevel(8)">Medium</button>
+          <button onclick="setLevel(12)">Hard</button>   
+
+<table>
+  <tbody class="board">
+
+  </tbody>
+</table>
 
     <div class="board-container"></div>
 
-    <div class="modal">
+<tr class="cell"> </tr>
 
-      <button onclick="initGame()">Restart Game</button>
+    <div class="modal">
+      <h6> you lost!</h6>
     </div>
 
     <script src="js/main.js"></script>
@@ -38,3 +52,4 @@
 
   </body>
 </html>
+
